@@ -1,0 +1,282 @@
+body{
+    background: #F8EFEA;
+}
+
+
+h1{
+    font-size:10em;
+    color:var(--bite_dark_green);
+}
+
+p{
+    color:var(--bite_dark_green);
+    font-size:1.5em;
+}
+
+#hero-container{
+    padding: 5% 25% 3% 25%;
+}
+
+#hero-container p{
+    font-size: 3rem;
+}
+
+#qg p{
+    color: var(--bite_red);
+    line-height: 20px;
+}
+
+h2{
+    color: var(--bite_dark_green);
+    font-size: 6rem;
+    padding-top: 5px;
+    padding-bottom: 1%;
+}
+.container-col {
+    display: flex;
+    gap: 20px; /* Espacio entre las cajas */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Alinea horizontalmente */
+}
+
+.box {
+    width: 408px;
+    height: 567px;
+    background-color: white; /* Color de fondo de las cajas */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Borde suave */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
+    padding: 20px; /* Espacio interno */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.box h3 {
+    font-size: 28px;
+}
+
+.box h2 {
+    font-size: 50px;
+    color: white;
+}
+
+.box p, li {
+    color: white;
+    font-size: 18px;
+}
+
+.box ul{
+    padding-left:5% ;
+}
+
+.box a {
+    background-color: white;
+    align-self: flex-end; /* Alinea el botón a la derecha */
+    justify-content: space-between;
+    margin-top: auto; /* Empuja el botón hacia la parte inferior */
+}
+
+
+.dark-green {
+    background-color: var(--bite_dark_green);
+}
+
+.light-green {
+    background-color: var(--bite_ligth_green);
+}
+
+.light-green h3 {
+    color: var(--bite_dark_green);
+}
+
+.light-green hr {
+    border: 1px solid var(--bite_dark_green);
+    width: 100px;
+
+}
+
+.dark-green a:hover {
+    background-color: var(--bite_ligth_green);
+    color: #22534A;
+}
+
+.dark-green h3 {
+    color: var(--bite_ligth_green);
+}
+
+hr {
+    border: 1px solid var(--bite_ligth_green);
+    width: 100px;
+    margin-bottom: 10%;
+}
+
+
+#faq{
+    padding: 5% 25% 3% 25%;
+}
+
+#faq p{
+    font-size:18px;
+}
+
+.red-text{
+    color: var(--bite_red);
+}
+
+.dropdown-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+details {
+    border: 1px solid black;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: '▼';
+    font-size: 16px;
+    color: #666;
+    transition: transform 1s ease;
+}
+
+details[open] summary::after {
+    content: '▲';
+    transform: rotate(0deg);
+}
+
+details[open]{
+    border-radius: 8px;
+}
+
+details p {
+    padding: 15px;
+    background-color: white;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+.letter-carrousel{
+    background-color: var(--bite_dark_green);
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.text-carrousel{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #hero-container {
+        padding: 5% 10% 3% 10%;
+    }
+
+    .box {
+        width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
+        height: auto;
+    }
+
+    #faq {
+        padding: 5% 10% 3% 10%;
+    }
+
+    details p {
+        font-size: 14px;
+    }
+
+    summary {
+        font-size: 16px;
+    }
+}
+
+/* Tablets (pantallas de 769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 6em;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #hero-container {
+        padding: 5% 20% 3% 20%;
+    }
+
+    .box {
+        width: 350px; /* Ajusta el ancho para pantallas medianas */
+        height: auto;
+    }
+
+    #faq {
+        padding: 5% 15% 3% 15%;
+    }
+}
+
+/* Pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 10em;
+    }
+
+    h2 {
+        font-size: 6em;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    #hero-container {
+        padding: 5% 25% 3% 25%;
+    }
+
+    .box {
+        width: 408px;
+        height: 567px;
+    }
+
+    #faq {
+        padding: 5% 25% 3% 25%;
+    }
+}

@@ -1,0 +1,132 @@
+h2{
+    color: var(--bite_dark_green);
+    font-size:7em;
+}
+
+p{
+    color: var(--bite_dark_green);
+    font-size:24px;
+}
+
+.left-column {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.right-column {
+    padding-right: 20%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cols {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10% 5% 10%;
+}
+
+.left-column {
+    flex: 1;
+    padding-left: 10%;
+}
+
+
+.contactForm {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+}
+
+.form-control.short-field {
+    width: 48%; /* To make two fields fit in one row */
+    display: inline-block;
+}
+
+.button_contact {
+    text-align: center;
+}
+
+.button-forms {
+    background-color: #d1d37a; /* Similar to the greenish button in the image */
+    color: #333;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-forms:hover {
+    background-color: #c2c765;
+}
+
+/* Extra spacing for text area */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 4em; /* Reduce el tamaño de las fuentes */
+    }
+
+    p {
+        font-size: 18px; /* Reduce el tamaño del texto */
+    }
+
+    .container-cols {
+        flex-direction: column; /* Cambia las columnas a filas en pantallas pequeñas */
+        padding: 5% 5%; /* Reduce el padding para móviles */
+    }
+
+    .left-column, .right-column {
+        padding: 0;
+    }
+
+    .right-column {
+        padding-top: 20px;
+        padding-right: 0; /* Quita el padding lateral en móviles */
+    }
+
+    .contactForm {
+        max-width: 100%; /* Ajusta el formulario para que ocupe todo el ancho en móviles */
+        padding: 10px;
+    }
+}
+
+/* Tabletas (pantallas de entre 769px y 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h2 {
+        font-size: 5em; /* Ajusta el tamaño del texto para tablets */
+    }
+
+    p {
+        font-size: 20px; /* Ajusta el tamaño del texto para tablets */
+    }
+
+    .container-cols {
+        padding: 5% 5%; /* Ajusta el padding en tablets */
+    }
+
+    .contactForm {
+        max-width: 80%; /* Reduce el tamaño del formulario en pantallas medianas */
+    }
+}

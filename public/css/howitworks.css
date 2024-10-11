@@ -1,0 +1,210 @@
+html, body {
+    color: white;
+}
+
+.section-1st {
+    background-color: var(--bite_dark_green);
+    background-size: 100% 125%;
+    background-image: url('../img/background_op.png'); /* Ruta de la imagen */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen permanezca fija al hacer scroll */
+}
+
+
+h1{
+    font-size:10em;
+}
+
+h2{
+    font-size:7em;
+}
+
+p{
+    color: #F8EFEA;
+    font-size:24px;
+}
+
+hr {
+    border: 1px solid var(--bite_ligth_green);;
+    width: 100px;
+    margin: 20px 0;
+}
+
+hr{
+    color: var(--bite_ligth_green);
+}
+
+#hero-container{
+    padding: 5% 35% 3% 35%;
+}
+
+.btn{
+    color: black;
+    font-weight: bold;
+    background-color: var(--bite_red);
+    border: 2px solid black;
+
+}
+
+.green-font{
+    color: var(--bite_ligth_green);
+}
+
+
+
+.container-cols {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 20% 10% 20%;
+}
+
+.left-column {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.light-text {
+    font-weight: lighter;
+}
+
+
+
+ul {
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-image {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.section-2{
+    background-color: var(--bite_red);
+}
+
+.green-font{
+    color: var(--bite_dark_green);
+}
+
+.section-2 hr{
+
+    border:1px solid var(--bite_dark_green);
+}
+.container {
+    display: flex;
+    gap: 20px; /* Espacio entre las cajas */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Alinea horizontalmente */
+
+}
+
+.box {
+    width: 408px;
+    height: 448px;
+    background-color: white; /* Color de fondo de las cajas */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Borde suave */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
+    margin-bottom: 5%;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #hero-container {
+        padding: 5% 10% 3% 10%;
+    }
+
+    .container-cols {
+        flex-direction: column; /* Cambia a diseño de columna */
+        padding: 5% 10% 10% 10%;
+    }
+
+    .left-column, .right-column {
+        padding: 0;
+    }
+
+    .box {
+        width: 80%; /* Ajusta el ancho al 100% */
+    }
+}
+
+/* Tablets (pantallas de entre 769px y 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 6em;
+    }
+
+    h2 {
+        font-size: 5em;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #hero-container {
+        padding: 5% 20% 3% 20%;
+    }
+
+    .container-cols {
+        padding: 5% 15% 10% 15%;
+    }
+
+    .box {
+        width: 300px; /* Ajusta el ancho para tablets */
+
+    }
+}
+
+/* Pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 10em;
+    }
+
+    h2 {
+        font-size: 7em;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    #hero-container {
+        padding: 5% 35% 3% 35%;
+    }
+
+    .container-cols {
+        padding: 5% 20% 10% 20%;
+    }
+
+    .box {
+        width: 408px;
+        height: 448px;
+    }
+}

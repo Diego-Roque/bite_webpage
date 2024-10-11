@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Bricolage Grotesque", sans-serif;
+    background: #F8EFEA;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --bite_ligth_red:#F8EFEA;
+    --bite_ligth_green: #D1D675;
+    --bite_dark_green: #22534A;
+    --bite_red:#DD896C;
+}
+
+.btn {
+    margin-top: 5%;
+    font-size: 18px;
+    padding: 1px 5% 1px 5%;
+    text-transform: uppercase;
+    background-color: var(--bite_ligth_green);
+    display: inline-block; /* Ensures buttons can be side by side */
+    line-height: 38px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    vertical-align: middle; /* Ensure alignment with other inline elements */
+}
+
+.sch{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.btn:hover {
+    background-color: var(--bite_dark_green);
+    color: white;
+    cursor: pointer;
+}
+
+.red-btn{
+    background-color: var(--bite_red);
+}
+
+.red-btn:hover{
+    color: black;
+    background-color: var(--bite_ligth_red);
+}
+
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 5%;
+    height: fit-content;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: var(--bite_ligth_green);
+}
+
+.logo{
+    width: 200px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5rem;
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--bite_dark_green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--bite_dark_green);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer{
+    max-width: 5%;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer img {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.col p {
+    color: white;
+    margin: 8px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.centered-text{
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.light-text{
+    font-weight:400;
+}
+
+.uppercase-text{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 50%; /* Scale down the base font size */
+    }
+
+    .logo{
+        width: 100px;
+        padding-bottom: 5%;
+    }
+
+    .logo-footer {
+        max-width: 25%;
+    }
+
+    .navbar-container {
+        padding: 2rem 2%; /* Reduce padding on smaller screens */
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .navbar {
+        justify-content: center; /* Center navbar items */
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        font-size: 1.6rem; /* Reduce button font size */
+        width: 100%; /* Full width buttons on small screens */
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .columns {
+        flex-direction: column; /* Stack footer columns vertically */
+        align-items: center;
+    }
+
+    .col {
+        margin-bottom: 20px; /* Add space between columns */
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar-container {
+        padding: 3rem 3%;
+    }
+
+    .navbar {
+        gap: 3rem; /* Reduce space between links */
+    }
+
+    .btn {
+        font-size: 1.7rem;
+        padding: 8px 4%;
+    }
+
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+}

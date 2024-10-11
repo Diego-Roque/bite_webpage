@@ -1,0 +1,354 @@
+
+
+#hero-container{
+    color: var(--bite_dark_green);
+}
+
+h1{
+    font-size:10em;
+}
+
+p{
+    font-size:20px;
+}
+
+
+
+.btn:hover {
+    background-color: var(--bite_dark_green);
+    color: white;
+    cursor: pointer;
+}
+
+.red-btn{
+    background-color: var(--bite_red);
+}
+
+.red-btn:hover{
+    color: black;
+    background-color: var(--bite_ligth_red);
+}
+
+#hero-container{
+    padding: 5% 35% 3% 35%;
+}
+
+#hero-container p{
+    font-size: 3rem;
+}
+
+#qg p{
+    color: var(--bite_red);
+    line-height: 20px;
+}
+
+h2{
+    color: var(--bite_dark_green);
+    font-size: 6rem;
+    padding-top: 5px;
+    padding-bottom: 1%;
+}
+
+#know-us {
+    position: relative;
+    color: #F8EFEA;
+    margin-bottom: 5%;
+    background-color: #22534A;
+    z-index: 1;
+}
+
+#know-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/green_patron.png');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+
+#know-us .green{
+    color: var(--bite_ligth_green);
+}
+
+#ku-initial-text h2{
+
+    color: #F8EFEA;
+}
+
+#ku-initial-text, #ku-final-text{
+    padding: 1% 15% 2% 15%;
+}
+
+#ku-btn{
+    margin: 1% 0 1% 0;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#wts p{
+    color: var(--bite_dark_green);
+}
+
+.red{
+    color: var(--bite_red);
+}
+
+
+.slide-container{
+    padding: 5% 25% 3% 25%;
+}
+
+
+.card {
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.card-image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Imagen circular */
+.card-image img {
+    width: 80px; /* Tamaño ajustado de la imagen */
+    align-content: center;
+    display: inline-block;
+}
+
+/* Título de la tarjeta */
+.title-card {
+    font-size: 16px;
+    color: var(--bite_dark_green);
+
+    font-weight: bold;
+}
+
+/* Descripción de la tarjeta */
+.description {
+    font-size: 14px;
+    color: var(--bite_dark_green);
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify; /* Alinea el texto a ambos lados */
+    padding: 0 10px; /* Un poco de espacio a los lados del texto */
+}
+
+/* Ensure the parent container has position: relative */
+.slide-container {
+    position: relative; /* This ensures that the swiper-pagination is positioned relative to the container */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Adjust swiper-slide */
+.swiper-slide {
+    width: 100% !important;
+    margin-right: 0 !important;
+    position: relative;
+}
+
+/* Adjust swiper-pagination */
+.swiper-pagination {
+    position: absolute; /* Make sure it's positioned relative to the slide-container */
+    bottom: 10px; /* Align to the bottom of the swiper */
+    left: 0;
+    right: 0;
+    width: 100%; /* Full width of the swiper */
+    text-align: center; /* Center the dots */
+    z-index: 10; /* Ensure it's on top of the slides */
+}
+
+/* Contenedor principal que incluye ambas columnas */
+.container-1cl-2cl {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas */
+    gap: 5px;
+    padding: 2% 20% 3% 20%;
+}
+
+/* Contenedor de imagen con overlay */
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: block;
+    opacity: 0; /* Imagen invisible inicialmente */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Overlay con texto */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bite_dark_green);
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Efecto hover: mostrar imagen y ocultar overlay */
+.image-container:hover img {
+    opacity: 1; /* Mostrar imagen */
+}
+
+.image-container:hover .overlay {
+    opacity: 0; /* Ocultar overlay */
+}
+
+/* Columna 1: Imagen grande */
+.col1 {
+    margin-top: 1%;
+    flex: 2;
+}
+
+/* Columna 2: Dos imágenes pequeñas */
+.col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #hero-container {
+        padding: 5% 10% 3% 10%;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    #hero-container p {
+        font-size: 2rem;
+    }
+
+    .container-1cl-2cl {
+        flex-direction: column;
+        padding: 2% 10% 3% 10%;
+    }
+
+    .col1, .col2 {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .slide-container {
+            padding: 5% 5% 3% 5%; /* Adjust padding for smaller screens */
+            overflow-y: auto; /* Ensure vertical scroll works */
+        }
+
+        .swiper-slide {
+            width: 100% !important; /* Ensure slides take full width */
+            box-sizing: border-box; /* Keep padding inside the element */
+        }
+
+        .card {
+            width: 100% !important; /* Full width for cards */
+            margin: 0 auto; /* Center the card */
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            flex-wrap: nowrap; /* Prevent wrapping */
+        }
+
+        .swiper-scrollbar {
+            width: 100%;
+            height: 4px;
+        }
+    }
+
+
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 8em;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #hero-container {
+        padding: 5% 20% 3% 20%;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    #hero-container p {
+        font-size: 2.5rem;
+    }
+
+    .container-1cl-2cl {
+        padding: 2% 15% 3% 15%;
+    }
+
+    .col1, .col2 {
+        width: 100%;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 10em;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #hero-container {
+        padding: 5% 35% 3% 35%;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    #hero-container p {
+        font-size: 3rem;
+    }
+
+    .container-1cl-2cl {
+        padding: 2% 20% 3% 20%;
+    }
+}
