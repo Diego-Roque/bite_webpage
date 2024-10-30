@@ -181,7 +181,6 @@ ul {
     }
 }
 
-/* Pantallas grandes (más de 1024px) */
 @media (min-width: 1025px) {
     h1 {
         font-size: 10em;

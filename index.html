@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bite</title>
-    <link href="css/general.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/preload.css">
-    <link rel="stylesheet" href="css/marquee.css">
+    <link href="public/css/general.css" rel="stylesheet">
+    <link href="public/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/preload.css">
+    <link rel="stylesheet" href="public/css/marquee.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <link
@@ -30,12 +30,12 @@
 
 
 <section class="navbar-container">
-    <a href="/">
+    <a href="/public">
         <img class="logo" src="/img/logo/logo_header.png" alt="bite-logo">
     </a>
     <nav class="navbar">
 
-        <a href="/">Home</a>
+        <a href="/public">Home</a>
 
         <a href="/hiw"> How it Works</a>
 
@@ -91,21 +91,21 @@
 
     <div class="animation-container">
         <div class="animation">
-            <video autoplay loop muted>
+            <video autoplay loop muted playsinline>
                 <source src="/video/animation_1.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
         </div>
 
         <div class="animation">
-            <video autoplay loop muted>
+            <video autoplay loop muted playsinline>
                 <source src="/video/animation_2.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
         </div>
 
         <div class="animation">
-            <video autoplay loop muted>
+            <video autoplay loop muted  playsinline>
                 <source src="/video/animation_3.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
@@ -120,11 +120,12 @@
     </div>
 </div>
 
+<!--
 <div id="wts" class="centered-text">
     <p class="light-text uppercase-text"> Our Happy Customers </p>
     <h2 class="red"> What They Say!</h2>
 
-    <!-- Swiper -->
+
     <div class="slide-container">
         <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
@@ -245,6 +246,7 @@
 
 
 </div>
+-->
 
 <div class="letter-carrousel">
     <h1 class="text-carrousel"> REQUEST A DEMO *</h1>
@@ -295,8 +297,8 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="js/swiper.js"></script>
-<script src="js/preloader.js"></script>
+<script src="public/js/swiper.js"></script>
+<script src="public/js/preloader.js"></script>
 
 </body>
 </html>

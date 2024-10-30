@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const fs = require("fs");
 
+
 const app = express();
 const PORT = 3000;
 
@@ -13,8 +14,9 @@ app.use(express.static('Public'));
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Public/index.html'));
+    res.sendFile("animation.html", { root : "public" });
 });
+
 
 app.get('/hiw', (req, res) => {
     res.sendFile(path.join(__dirname, 'Public/howitworks.html'));
@@ -27,6 +29,10 @@ app.get('/pricing', (req, res) => {
 app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, 'Public/contact.html'));
 })
+
+app.use((req, res) => {
+    res.redirect('/');
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port http://localhost:${PORT}`);
