@@ -14,9 +14,8 @@ app.use(express.static('Public'));
 
 
 app.get('/', (req, res) => {
-    res.sendFile("index.html", { root : "public" });
+    res.sendFile(path.join(__dirname, 'Public/index.html'));
 });
-
 
 app.get('/hiw', (req, res) => {
     res.sendFile(path.join(__dirname, 'Public/howitworks.html'));
