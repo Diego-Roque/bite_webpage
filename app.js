@@ -14,7 +14,7 @@ app.use(express.static('Public'));
 
 
 app.get('/', (req, res) => {
-    res.sendFile("animation.html", { root : "public" });
+    res.sendFile("index.html", { root : "public" });
 });
 
 
