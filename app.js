@@ -18,15 +18,15 @@ app.get('/', (req, res) => {
 });
 
 app.get('/hiw', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Public/howitworks.html'));
+    res.sendFile(path.join(__dirname, 'public/howitworks.html'));
 });
 
 app.get('/pricing', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Public/pricing.html'));
+    res.sendFile(path.join(__dirname, 'public/pricing.html'));
 });
 
 app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Public/contact.html'));
+    res.sendFile(path.join(__dirname, 'public/contact.html'));
 })
 
 app.use((req, res) => {

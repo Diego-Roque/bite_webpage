@@ -4,15 +4,301 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bite</title>
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="css/preload.css">
+    <link rel="stylesheet" href="css/marquee.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
 <body>
+
 <div id="preloader">
-    <video id="video1" class="preloader-video" autoplay loop muted playsinline>
+    <video id="video1" class="preloader-video" autoplay muted playsinline>
         <source src="/video/preload.webm" type="video/webm">
     </video>
+    <video id="video2" class="preloader-video hidden" autoplay muted playsinline>
+        <source src="/video/preloadfull.webm" type="video/webm">
+    </video>
 </div>
+
+
+
+
+<section class="navbar-container">
+    <a href="/public">
+        <img class="logo" src="/img/logo/logo_header.png" alt="bite-logo">
+    </a>
+    <nav class="navbar">
+
+        <a href="/public">Home</a>
+
+        <a href="/hiw"> How it Works</a>
+
+        <a href="/pricing"> Pricing</a>
+
+        <a href="/contact"> Contact</a>
+
+    </nav>
+</section>
+
+<div id="hero-container" class="centered-text">
+    <h1>Keep Every Bite of Your Orders</h1>
+    <p>Bite gives you the tools to manage your restaurant’s orders, deliveries, and loyalty programs without losing a chunk of your revenue to third-party fees. We are a Seamless order management and delivery integration—all the control, none of the hidden costs.</p>
+    <a class="red-btn btn">RQST DEMO</a>
+    <a class="btn">Whatsapp</a>
+</div>
+
+
+<div id="qg" class="centered-text">
+    <p class="light-text uppercase-text">A quick guide</p>
+    <h2> How it works </h2>
+
+    <div class="container-1cl-2cl">
+        <!-- Columna 1: Imagen más grande con texto encima -->
+        <div class="col1">
+            <div class="image-container">
+                <img src="/img/set-up.png" alt="Main image">
+                <div class="overlay">1</div>
+            </div>
+        </div>
+
+        <!-- Columna 2: Dos imágenes más pequeñas con texto encima -->
+        <div class="col2">
+            <div class="image-container">
+                <img id="ticket" src="/img/ticket.png" alt="Second image">
+                <div class="overlay">Manage Your Orders</div>
+            </div>
+            <div class="image-container">
+                <img src="/img/delivery.png" alt="Third image">
+                <div class="overlay">Seamless Delivery</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="know-us" class="centered-text">
+    <div id="ku-initial-text">
+        <p class="green light-text uppercase-text">Why bite exist</p>
+        <h2> Get to Know Us!</h2>
+        <p>Bite was created For restaurant professionals who were frustrated with high delivery app fees and limited customer control. We built a platform that puts you in charge, allowing you to manage your orders, deliveries, and customer loyalty with one simple tool.</p>
+    </div>
+
+    <div class="animation-container">
+        <div class="animation">
+            <video autoplay loop muted playsinline>
+                <source src="/video/animation_1.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+        <div class="animation">
+            <video autoplay loop muted playsinline>
+                <source src="/video/animation_2.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+        <div class="animation">
+            <video autoplay loop muted  playsinline>
+                <source src="/video/animation_3.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </div>
+
+
+
+    <div class="ku-final-text">
+        <p>At Bite, we believe restaurant owners deserve full control over their orders, customers, and profits. Our mission is to help you manage your business with ease, without losing revenue to third-party fees.</p>
+        <a class="btn" id="ku-btn">RQST DEMO</a>
+    </div>
+</div>
+
+<!--
+<div id="wts" class="centered-text">
+    <p class="light-text uppercase-text"> Our Happy Customers </p>
+    <h2 class="red"> What They Say!</h2>
+
+
+    <div class="slide-container">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+
+
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="" alt="card">
+                        <h2 class="title-card"> Fiesta Cancun</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="description">“Lorem ipsum dolor sit amet consectetur. Nisl euismod at erat lacinia vel adipiscing vel aliquet. Id venenatis diam sit in facilisis tincidunt dolor.” </p>
+                    </div>
+                </div>
+
+
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="" alt="card">
+                        <h2 class="title-card"> Fiesta Cancun</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="description"> Lorem ipsum</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="" alt="card">
+                        <h2 class="title-card"> Fiesta Cancun</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="description"> Lorem ipsum</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="" alt="card">
+                        <h2 class="title-card"> Fiesta Cancun</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="description"> Lorem ipsum</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="" alt="card">
+                        <h2 class="title-card"> others</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="description"> Lorem ipsum</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="" alt="card">
+                        <h2 class="title-card"> others</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="description"> Lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="" alt="card">
+                        <h2 class="title-card"> others</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="description"> Lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="" alt="card">
+                        <h2 class="title-card"> others</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="description"> Lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="" alt="card">
+                        <h2 class="title-card"> others</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="description"> Lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="" alt="card">
+                        <h2 class="title-card"> others</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="description"> Lorem ipsum</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+</div>
+-->
+
+<div class="letter-carrousel">
+    <h1 class="text-carrousel"> REQUEST A DEMO *</h1>
+    <h1 class="text-carrousel"> REQUEST A DEMO *</h1>
+    <h1 class="text-carrousel"> REQUEST A DEMO *</h1>
+    <h1 class="text-carrousel"> REQUEST A DEMO *</h1>
+</div>
+
+<div class="centered-text">
+    <a class="btn sch">Schedule Now</a>
+</div>
+
+<div class="letter-carrousel">
+    <h1 class="text-carrousel"> REQUEST A DEMO *</h1>
+    <h1 class="text-carrousel"> REQUEST A DEMO *</h1>
+    <h1 class="text-carrousel"> REQUEST A DEMO *</h1>
+    <h1 class="text-carrousel"> REQUEST A DEMO *</h1>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="logo-footer">
+            <img src="/img/logo/logo_footer.png" alt="logo-footer">
+        </div>
+
+        <div class="columns">
+            <div class="col">
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+            </div>
+            <div class="col">
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+            </div>
+            <div class="col">
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <div class="social-icons">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/preloader.js"></script>
 
 </body>
 </html>
