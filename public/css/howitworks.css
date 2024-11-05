@@ -151,6 +151,12 @@ ul {
     .box {
         width: 80%; /* Ajusta el ancho al 100% */
     }
+
+    .section-1st {
+        background-color: var(--bite_dark_green);
+        background-size: 200% 10%;
+
+    }
 }
 
 /* Tablets (pantallas de entre 769px y 1024px) */
@@ -179,6 +185,9 @@ ul {
         width: 300px; /* Ajusta el ancho para tablets */
 
     }
+
+
+
 }
 
 @media (min-width: 1025px) {
