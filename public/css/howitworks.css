@@ -35,7 +35,7 @@ hr{
 }
 
 #hero-container{
-    padding: 5% 35% 3% 35%;
+    padding: 5% 30% 3% 30%;
 }
 
 .btn{
@@ -55,7 +55,7 @@ hr{
 .container-cols {
     display: flex;
     justify-content: space-between;
-    padding: 5% 20% 10% 20%;
+    padding: 5% 10% 10% 10%;
 }
 .left-column,
 .right-column {
@@ -132,7 +132,7 @@ ul {
 
 .take-control{
     background-color: var(--bite_red);
-    padding: 5% 35% 3% 35%;
+    padding: 5% 30% 3% 30%;
 }
 
 .take-control h2{
@@ -180,6 +180,10 @@ ul {
         background-size: 200% 10%;
 
     }
+    .take-control{
+        background-color: var(--bite_red);
+        padding: 5% 10% 3% 10%;
+    }
 }
 
 /* Tablets (pantallas de entre 769px y 1024px) */
@@ -226,13 +230,7 @@ ul {
         font-size: 24px;
     }
 
-    #hero-container {
-        padding: 5% 35% 3% 35%;
-    }
 
-    .container-cols {
-        padding: 5% 20% 10% 20%;
-    }
 
     .box {
         width: 408px;

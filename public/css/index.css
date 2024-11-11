@@ -310,10 +310,12 @@ h2{
     .container-1cl-2cl {
         flex-direction: column;
         padding: 2% 10% 3% 10%;
+        height: 90vh;
     }
 
     .col1, .col2 {
         width: 100%;
+        height: 100%;
     }
 
 
@@ -342,6 +344,9 @@ h2{
             width: 100%;
             height: 4px;
         }
+    .col1{
+        flex: 0;
+    }
     }
 
 
@@ -375,6 +380,7 @@ h2{
     .col1, .col2 {
         width: 100%;
     }
+
 }
 
 /* Pantallas grandes */
