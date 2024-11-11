@@ -39,7 +39,6 @@ p{
 
 #qg p{
     color: var(--bite_red);
-    line-height: 20px;
 }
 
 h2{
@@ -176,7 +175,8 @@ h2{
     display: flex;
     justify-content: space-between; /* Distribuye las columnas */
     gap: 5px;
-    padding: 2% 20% 3% 20%;
+    padding: 2% 10% 3% 10%;
+    height: 100vh;
 }
 
 /* Contenedor de imagen con overlay */
@@ -208,7 +208,20 @@ h2{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    flex-direction: column;
+
+}
+
+.overlay-text{
+    padding-bottom: 1%;
+    color: white !important;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.green-overlay{
+    color: var(--bite_ligth_green) !important;
 }
 
 /* Efecto hover: mostrar imagen y ocultar overlay */
@@ -217,8 +230,13 @@ h2{
 }
 
 .image-container:hover .overlay {
-    opacity: 0; /* Ocultar overlay */
+    background-color: rgba(34, 83, 74, 0.5); /* Ocultar overlay */
 }
+
+.col1, .col2 {
+    height: 80vh;
+}
+
 
 /* Columna 1: Imagen grande */
 .col1 {
@@ -381,7 +399,4 @@ h2{
         font-size: 3rem;
     }
 
-    .container-1cl-2cl {
-        padding: 2% 20% 3% 20%;
-    }
 }

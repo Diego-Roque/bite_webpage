@@ -14,6 +14,18 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9EGZBTHBZC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9EGZBTHBZC');
+    </script>
+
+
 </head>
 <body>
 
@@ -30,14 +42,15 @@
 
 
 <section class="navbar-container">
-    <a href="/public">
-        <img class="logo" src="/img/logo/logo_header.png" alt="bite-logo">
-    </a>
     <nav class="navbar">
 
         <a href="/public">Home</a>
 
         <a href="/hiw"> How it Works</a>
+
+        <a href="/public">
+            <img class="logo" src="/img/logo/logo_header.png" alt="bite-logo">
+        </a>
 
         <a href="/pricing"> Pricing</a>
 
@@ -49,7 +62,7 @@
 <div id="hero-container" class="centered-text">
     <h1>Keep Every Bite of Your Orders</h1>
     <p>Bite gives you the tools to manage your restaurant’s orders, deliveries, and loyalty programs without losing a chunk of your revenue to third-party fees. We are a Seamless order management and delivery integration—all the control, none of the hidden costs.</p>
-    <a class="red-btn btn">RQST DEMO</a>
+    <a class="red-btn btn" href="/contact">RQST DEMO</a>
     <a class="btn">Whatsapp</a>
 </div>
 
@@ -63,7 +76,10 @@
         <div class="col1">
             <div class="image-container">
                 <img src="/img/set-up.png" alt="Main image">
-                <div class="overlay">1</div>
+                <div class="overlay">
+                    <p class="overlay-text"> 1</p>
+                    <p class="overlay-text green-overlay"> Setup Your Menu </p>
+                </div>
             </div>
         </div>
 
@@ -71,11 +87,17 @@
         <div class="col2">
             <div class="image-container">
                 <img id="ticket" src="/img/ticket.png" alt="Second image">
-                <div class="overlay">Manage Your Orders</div>
+                <div class="overlay">
+                    <p class="overlay-text"> 2 </p>
+                    <p class="overlay-text green-overlay"> Manage Your orders </p>
+                </div>
             </div>
             <div class="image-container">
                 <img src="/img/delivery.png" alt="Third image">
-                <div class="overlay">Seamless Delivery</div>
+                <div class="overlay">
+                    <p class="overlay-text white"> 3 </p>
+                    <p class="overlay-text green-overlay"> Seamless Delivery </p>
+                </div>
             </div>
         </div>
     </div>
@@ -116,7 +138,7 @@
 
     <div class="ku-final-text">
         <p>At Bite, we believe restaurant owners deserve full control over their orders, customers, and profits. Our mission is to help you manage your business with ease, without losing revenue to third-party fees.</p>
-        <a class="btn" id="ku-btn">RQST DEMO</a>
+        <a class="btn" id="ku-btn" href="/contact">RQST DEMO</a>
     </div>
 </div>
 
