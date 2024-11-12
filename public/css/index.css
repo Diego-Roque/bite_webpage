@@ -181,12 +181,17 @@ h2{
 
 /* Contenedor de imagen con overlay */
 .image-container {
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
     position: relative;
 }
 
 .image-container img {
+    max-height: 50vh;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border: 2px solid black;
     border-radius: 5px;
     display: block;
@@ -234,7 +239,7 @@ h2{
 }
 
 .col1, .col2 {
-    height: 80vh;
+    height: 50vh;
 }
 
 
@@ -346,6 +351,9 @@ h2{
         }
     .col1{
         flex: 0;
+    }
+    #qg{
+        height: 140vh;
     }
     }
 

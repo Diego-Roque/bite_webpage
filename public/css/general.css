@@ -194,10 +194,43 @@ footer {
     text-transform: uppercase;
     font-size: 1.5rem;
 }
+footer a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer_socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_socials a{
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    opacity: .75;
+    transition: 0.2s ease-in-out;
+}
+
+.footer_socials a:hover{
+    opacity: 1;
+}
+
+.footer_socials a svg{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    stroke: white;
+}
+
 
 @media only screen and (max-width: 768px) {
 
     .navbar{
+        background-image: url('../img/header_patern.png');
+        background-size: 100% 100%;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
@@ -250,6 +283,7 @@ footer {
     }
 
     .navbar {
+
         flex-direction: column;
         position: absolute;
         top: 0;
@@ -280,6 +314,32 @@ footer {
 
     .col {
         margin-bottom: 20px; /* Add space between columns */
+    }
+
+    .footer_socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_socials a{
+        width: 5rem;
+        height: 5rem;
+        padding: 1rem;
+        opacity: .75;
+        transition: 0.2s ease-in-out;
+    }
+
+    .footer_socials a:hover{
+        opacity: 1;
+    }
+
+    .footer_socials a svg{
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: contain;
+
     }
 }
 
