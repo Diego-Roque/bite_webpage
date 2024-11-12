@@ -184,6 +184,9 @@ ul {
         background-color: var(--bite_red);
         padding: 5% 10% 3% 10%;
     }
+    .second-section {
+    flex-direction: column-reverse;
+}
 }
 
 /* Tablets (pantallas de entre 769px y 1024px) */

@@ -207,6 +207,10 @@ details p {
         padding: 5% 10% 3% 10%;
     }
 
+    .container-col {
+        flex-direction: column; /* Coloca las cajas una debajo de otra en pantallas pequeñas */
+    }
+
     .box {
         width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
         height: auto;

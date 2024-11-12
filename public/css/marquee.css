@@ -1,4 +1,4 @@
-.letter-carrousel{
+.letter-carrousel, .left-letter-carrousel{
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
@@ -17,11 +17,31 @@
     animation: move-rtl 6000ms linear infinite;
 }
 
+
+.left-letter-carrousel h1 {
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: white;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-ltr 6000ms linear infinite;
+}
+
+
 @keyframes move-rtl {
     0%{
         transform: translateX(0);
     }
     100%{
         transform: translateX(-100%);
+    }
+}
+
+@keyframes move-ltr {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }

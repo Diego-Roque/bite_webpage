@@ -45,6 +45,10 @@ html{
     background-color: var(--bite_ligth_green)!important; ;
 }
 
+.drk-grn-btn{
+    background-color: var(--bite_dark_green);
+    color: white;
+}
 
 .sch{
     margin: 0;
@@ -192,6 +196,12 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .navbar{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
     .container-burguer{
         position: absolute;
         top: 10px;
@@ -208,7 +218,7 @@ footer {
         transition: 0.4s;
     }
 
-    /* Animación de transformación en "X" */
+
     .change .bar1 {
         transform: translate(0, 11px) rotate(-45deg);
     }
@@ -283,9 +293,6 @@ footer {
         padding: 3rem 3%;
     }
 
-    .navbar {
-        gap: 3rem; /* Reduce space between links */
-    }
 
     .btn {
         font-size: 1.7rem;
