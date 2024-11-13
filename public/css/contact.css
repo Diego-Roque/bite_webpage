@@ -8,6 +8,10 @@ p{
     font-size:24px;
 }
 .container-cols {
+    background-size: 100% 125%;
+    background-image: url('../img/background_op.png'); /* Ruta de la imagen */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed;
     display: flex;
     justify-content: space-between;
     padding: 30% 10%;
@@ -32,6 +36,8 @@ p{
 
 @media (max-width: 768px) {
 
+
+
     footer{
         margin-top: 100vh;
     }
@@ -47,6 +53,7 @@ p{
     .container-cols {
         flex-direction: column; /* Cambia las columnas a filas en pantallas pequeñas */
         padding: 5% 5%; /* Reduce el padding para móviles */
+        background-size: 200% 10%;
     }
 
     .left-column, .right-column {

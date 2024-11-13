@@ -355,8 +355,9 @@ footer a{
 
 
     .btn {
+        width: auto;
         font-size: 1.7rem;
-        padding: 8px 4%;
+        padding: 5px 8vh;
     }
 
     .columns {
@@ -364,3 +365,4 @@ footer a{
         align-items: center;
     }
 }
+
