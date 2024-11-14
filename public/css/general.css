@@ -8,6 +8,7 @@
 }
 
 html{
+    text-transform: capitalize;
     font-family: "Bricolage Grotesque", sans-serif;
     background: #F8EFEA;
     font-size: 62.5%;

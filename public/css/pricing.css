@@ -76,6 +76,7 @@ h2{
     align-self: flex-end; /* Alinea el botón a la derecha */
     justify-content: space-between;
     margin-top: auto; /* Empuja el botón hacia la parte inferior */
+
 }
 
 
@@ -198,6 +199,9 @@ details p {
 }
 
 @media (max-width: 768px) {
+    .box a{
+        margin-top: 2vh;
+    }
     .container-col{
         margin-left: 2vh;
         margin-right: 2vh;
